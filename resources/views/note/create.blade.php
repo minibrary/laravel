@@ -8,8 +8,8 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <form class="form-horizontal" action="{{ route('note.store') }}" method="post">
-        {{csrf_field()}}
+      <form action="{{ route('note.store') }}" method="post">
+        {{ csrf_field() }}
         <div class="form-group{{ ($errors->has('fqdn')) ? $errors->first('fqdn') : '' }}">
 	
 	<input type="text" name="Domain (FQDN)" class="form-control" placeholder="e.g.google.com">
