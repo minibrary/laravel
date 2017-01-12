@@ -30,6 +30,7 @@
 	    <div>
 	    <textarea class="form-control" rows="5" name="memo">{{ old('memo') }}</textarea>
 	    </div>
+	    </div>
         <div class="form-group">
           <input type="submit" class="btn btn-primary" value="save">
         </div>
