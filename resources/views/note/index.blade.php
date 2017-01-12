@@ -12,22 +12,22 @@
 <title>Home | CertNote</title>
 
 <!-- Bootstrap -->
-<link href="{{ asset('/gentellela/vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="{{ asset('/gentellela/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 <!-- NProgress -->
-<link href="{{ asset('/gentellela/vendors/nprogress/nprogress.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/nprogress/nprogress.css') }}" rel="stylesheet">
 <!-- iCheck -->
-<link href="{{ asset('/gentellela/vendors/iCheck/skins/flat/green.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/iCheck/skins/flat/green.css') }}" rel="stylesheet">
 <!-- Datatables -->
-<link href="{{ asset('/gentellela/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/gentellela/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/gentellela/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/gentellela/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/gentellela/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
 
 <!-- Custom Theme Style -->
-<link href="{{ asset('/gentellela/build/css/custom.min.css') }}" rel="stylesheet">
+<link href="/css/custom.min.css" rel="stylesheet">
 </head>
 
 @endsection
