@@ -1,44 +1,37 @@
-@extends('master')
+@extends('gentellela')
 
-@section('title')
- is this work
+@section('head')
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Add domain | CertNote</title>
+
+<!-- Bootstrap -->
+<link href="{{ asset('/gentellela/vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="{{ asset('/gentellela/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+<!-- NProgress -->
+<link href="{{ asset('/gentellela/vendors/nprogress/nprogress.css') }}" rel="stylesheet">
+<!-- iCheck -->
+<link href="{{ asset('/gentellela/vendors/iCheck/skins/flat/green.css') }}" rel="stylesheet">
+<!-- Datatables -->
+<link href="{{ asset('/gentellela/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/gentellela/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/gentellela/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/gentellela/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/gentellela/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<link href="{{ asset('/gentellela/build/css/custom.min.css') }}" rel="stylesheet">
+</head>
+
 @endsection
 
 @section('content')
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Create Data2</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <form action="{{ route('note.store') }}" method="post">
-        {{ csrf_field() }}
-        <div class="form-group{{ ($errors->has('fqdn')) ? $errors->first('fqdn') : '' }}">
-	
-	<input type="text" name="Domain (FQDN)" class="form-control" placeholder="e.g.google.com">
-          {!! $errors->first('fqdn','<p class="help-block">:message</p>') !!}
-        </div>
 
-	<div class="form-group">
-          <input type="text" name="Port" class="form-control" row="3" placeholder="443 used by default unless input specific">
-        </div>
-
-	<div class="form-group{{ ($errors->has('description')) ? $errors->first('fqdn') : '' }}">
-          <input type="text" name="MEMO" class="form-control" row="3" placeholder="Memo for this domain">
-          {!! $errors->first('memo','<p class="help-block">:message</p>') !!}
-        </div>
-	
-	<div class="form-group{{ ($errors->has('memo')) ? $error->first('fqdn') : '' }}">
-	  <label for="Memo">Memo</label>
-	    <div>
-	    <textarea class="form-control" rows="5" name="memo">{{ old('memo') }}</textarea>
-	    </div>
-	    </div>
-        <div class="form-group">
-          <input type="submit" class="btn btn-primary" value="save">
-        </div>
-      </form>
-    </div>
-  </div>
   @stop
