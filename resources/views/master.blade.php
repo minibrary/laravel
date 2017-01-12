@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TEST-Laravel</title>
+
+    <title>Laravel Test Home</title>
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
@@ -33,7 +35,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/blog">Home</a></li>
+            <li class="active"><a href="/note">Home</a></li>
             <li><a href="#"></a></li>
 
           </ul>

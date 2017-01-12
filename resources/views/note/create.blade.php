@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('title')
+ is this work
+@endsection
+
 @section('content')
   <div class="row">
     <div class="col-md-12">
