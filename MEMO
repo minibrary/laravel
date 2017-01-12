@@ -1,5 +1,6 @@
 Windows GIT Test change.
 
+
   <div class="row">
     <div class="col-md-12">
       <h1>My Note</h1>
@@ -29,13 +30,6 @@ Windows GIT Test change.
       @endforeach
     </table>
   </div>
-
-
-  http://localhost:8000/gentellela/vendors/datatables.net-scroller/js/datatables.scroller.min.js
-
-
-
-
 
 
 
