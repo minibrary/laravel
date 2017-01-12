@@ -24,6 +24,12 @@
           <input type="text" name="MEMO" class="form-control" row="3" placeholder="Memo for this domain">
           {!! $errors->first('memo','<p class="help-block">:message</p>') !!}
         </div>
+	
+	<div class="form-group{{ ($errors->has('memo')) ? $error->first('fqdn') : '' }}">
+	  <label for="Memo">Memo</label>
+	    <div>
+	    <textarea class="form-control" rows="5" name="memo">{{ old('memo') }}</textarea>
+	    </div>
         <div class="form-group">
           <input type="submit" class="btn btn-primary" value="save">
         </div>
