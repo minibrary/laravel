@@ -55,7 +55,10 @@ return [
     |
     */
 
-    'from' => array('address' => 'postmaster@mg.minibrary.com', 'name' => 'CertNote'),
+    'from' => [
+        'address' => 'hello@example.com',
+        'name' => 'Example',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => 'tls',
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +84,7 @@ return [
     |
     */
 
-    'username' => null,
+    'username' => env('MAIL_USERNAME'),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +97,7 @@ return [
     |
     */
 
-    'password' => null,
+    'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
